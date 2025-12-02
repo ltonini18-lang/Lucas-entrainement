@@ -13,25 +13,32 @@
       padding: 20px;
       line-height: 1.7;
       color: #1a1a1a;
-      background: #fafafa;
+      background: #f9f9f9;
     }
 
-    h1, h2 {
-      color: #111;
-      margin-top: 50px;
-      margin-bottom: 15px;
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-title {
+      font-size: 36px;
+      font-weight: 700;
       letter-spacing: -0.5px;
     }
 
-    h1 {
-      font-size: 34px;
-      text-align: center;
-      margin-top: 20px;
+    .hero-subtitle {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #444;
     }
 
     h2 {
+      margin-top: 50px;
       font-size: 26px;
-      margin-top: 60px;
+      color: #111;
     }
 
     p {
@@ -49,19 +56,20 @@
       margin-bottom: 10px;
     }
 
-    .section-image {
-      width: 100%;
-      border-radius: 12px;
-      margin: 40px 0;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    /* SECTION DIVIDER */
+    .divider {
+      height: 1px;
+      background: #ddd;
+      margin: 45px 0;
     }
 
+    /* CONTACT BOX */
     .contact-box {
       background: white;
       padding: 25px;
       border-radius: 12px;
-      margin-top: 25px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+      margin-top: 40px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
     a {
@@ -73,10 +81,13 @@
 </head>
 <body>
 
-  <!-- IMAGE HEADER -->
-  <img class="section-image" src="https://images.unsplash.com/photo-1543411078-99a5ba397639?auto=format&fit=crop&w=1600&q=60" alt="Running landscape">
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <div class="hero-title">Entraînement en Course à Pied</div>
+    <div class="hero-subtitle">Accompagnement personnalisé</div>
+  </div>
 
-  <h1>Entraînement en Course à Pied – Accompagnement Personnalisé</h1>
+  <div class="divider"></div>
 
   <h2>La formule que je propose</h2>
   <ul>
@@ -85,24 +96,23 @@
     <li>La possibilité de m’écrire librement sur WhatsApp (messages ou notes vocales)</li>
   </ul>
 
-  <img class="section-image" src="https://images.unsplash.com/photo-1502810190503-830027fc60a7?auto=format&fit=crop&w=1600&q=60" alt="Running shoes">
+  <div class="divider"></div>
 
   <h2>Ma philosophie d’entraînement</h2>
   <p>
     Pour tirer un maximum de bénéfice de l’entraînement, il doit être adapté à la forme du moment. Or la forme évolue constamment : en fonction des séances récentes, bien sûr, mais aussi du travail, de la vie familiale, du sommeil et des imprévus du quotidien.
   </p>
   <p>
-    C’est pourquoi prévoir un plan plusieurs semaines à l’avance est, dans la plupart des cas, voué à l’échec ou, du moins, sous-optimal pour progresser.  
+    C’est pourquoi prévoir un plan plusieurs semaines à l’avance est, dans la plupart des cas, voué à l’échec ou, du moins, sous-optimal pour progresser.
   </p>
   <p>
     Mon objectif est simple : apporter de la performance, de façon efficace et durable.
   </p>
 
-  <img class="section-image" src="https://images.unsplash.com/photo-1571731956672-d3c3e5f29745?auto=format&fit=crop&w=1600&q=60" alt="Trail runner">
+  <div class="divider"></div>
 
   <h2>Ma méthode</h2>
   <p>Mon rôle premier est d’éviter les erreurs qui freinent la progression. Pour cela, ma méthode repose sur :</p>
-
   <ul>
     <li>l’analyse rigoureuse des données recueillies par la montre connectée</li>
     <li>nos échanges lors des entretiens hebdomadaires</li>
@@ -119,8 +129,9 @@
   </p>
 
   <p>
-    Bien entendu, l’entraînement est périodisé. Une fois les objectifs définis, j’établis les grands blocs et les qualités à développer.  
+    Bien entendu, l’entraînement est périodisé. Une fois les objectifs définis, j’établis les grands blocs et les qualités à développer.
   </p>
+
   <p>
     Mais les séances sont toujours décidées au plus près de l’exécution, afin d’ajuster les allures et les distances selon la forme réelle.
   </p>
@@ -133,10 +144,9 @@
     Si l’essai est concluant, cela débouche la plupart du temps sur une collaboration de long terme, ce qui est souhaitable pour tout le monde.
   </p>
 
-  <img class="section-image" src="https://images.unsplash.com/photo-1525054098605-8e762c017741?auto=format&fit=crop&w=1600&q=60" alt="Training data">
+  <div class="divider"></div>
 
   <h2>Les bases de mon expertise</h2>
-
   <p>
     Je suis entraîneur en course à pied diplômé de l’USA Track & Field.
   </p>
@@ -161,13 +171,5 @@
 
   <div class="contact-box">
     <h2>Prendre contact</h2>
-    <p>N’hésite pas à me contacter à  
-      <a href="mailto:ltonini18@gmail.com">ltonini18@gmail.com</a>  
-      si tu veux échanger en visio ou par téléphone.
-    </p>
-  </div>
-
-  <br><br>
-
-</body>
-</html>
+    <p>
+      N’hésite
