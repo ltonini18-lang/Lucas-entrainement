@@ -16,7 +16,6 @@
       background: #f9f9f9;
     }
 
-    /* HERO SECTION */
     .hero {
       text-align: center;
       padding: 60px 20px 40px 20px;
@@ -40,19 +39,18 @@
       font-size: 17px;
     }
 
-    /* OVAL COMPARTMENTS */
+    /* --- FORMULA BOXES --- */
     .formula-container {
       display: flex;
       gap: 20px;
       margin-top: 25px;
       margin-bottom: 25px;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;  /* blocs côte à côte sur ordinateur */
     }
 
     .formula-box {
       flex: 1;
-      min-width: 240px;
       background: white;
       padding: 18px 20px;
       border-radius: 40px;
@@ -61,16 +59,28 @@
       font-size: 16px;
       font-weight: 600;
       border: 1px solid #eee;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    /* Divider */
+    /* Mobile : empile automatiquement */
+    @media (max-width: 720px) {
+      .formula-container {
+        flex-wrap: wrap;
+      }
+      .formula-box {
+        min-width: 100%;
+      }
+    }
+
     .divider {
       height: 1px;
       background: #ddd;
       margin: 45px 0;
     }
 
-    /* CONTACT BOX */
     .contact-box {
       background: white;
       padding: 25px;
@@ -108,7 +118,7 @@
     </div>
 
     <div class="formula-box">
-      La possibilité de m’écrire<br><strong>sur WhatsApp</strong>
+      La possibilité de m’écrire librement<br><strong>sur WhatsApp</strong><br>(messages ou notes vocales)
     </div>
   </div>
 
