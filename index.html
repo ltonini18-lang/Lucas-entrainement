@@ -14,12 +14,12 @@
       line-height: 1.7;
       color: #1a1a1a;
       background: #f9f9f9;
-      text-align: justify;                  /* 🔥 Paragraphe justifié */
-      text-justify: inter-word;
+      text-align: justify;       /* Justifié */
+      text-justify: auto;        /* ✔️ empêche les gros espaces */
     }
 
     h2, .hero-title {
-      text-align: center;                   /* 🔥 Titres centrés */
+      text-align: center;
     }
 
     /* HERO */
@@ -53,7 +53,6 @@
       text-align: center;
     }
 
-    /* used for 4 blocks → switches to 2x2 on desktop */
     .block-grid-4 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -97,7 +96,7 @@
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
-      text-align: center; /* 🔥 Centré propre */
+      text-align: center;
     }
 
     a {
@@ -165,7 +164,6 @@
 
   <p>Mon rôle premier est d’éviter les erreurs qui freinent la progression. Pour cela, ma méthode repose sur :</p>
 
-  <!-- 🔥 LES 4 BLOCS OVALISÉS -->
   <div class="block-grid-4">
 
     <div class="oval-box">
