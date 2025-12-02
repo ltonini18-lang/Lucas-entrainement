@@ -14,15 +14,14 @@
       line-height: 1.7;
       color: #1a1a1a;
       background: #f9f9f9;
-      text-align: justify;                  /* 🔥 Paragraphe justifié */
+      text-align: justify;     /* Paragraphes justifiés */
       text-justify: inter-word;
     }
 
     h2, .hero-title {
-      text-align: center;                   /* 🔥 Titres centrés */
+      text-align: center;      /* Titres centrés */
     }
 
-    /* HERO */
     .hero {
       text-align: center;
       padding: 60px 20px 40px 20px;
@@ -33,30 +32,18 @@
       font-size: 36px;
       font-weight: 700;
       letter-spacing: -0.5px;
-      text-align: center;
     }
 
-    /* DIVIDER */
     .divider {
       height: 1px;
       background: #ddd;
       margin: 45px 0;
     }
 
-    /* --- FORMULA + METHOD BLOCKS --- */
-
+    /* FORMULA (3 blocks) */
     .block-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin: 30px 0;
-      text-align: center;
-    }
-
-    /* used for 4 blocks → switches to 2x2 on desktop */
-    .block-grid-4 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       margin: 30px 0;
       text-align: center;
@@ -77,12 +64,36 @@
       line-height: 1.4;
     }
 
-    /* Mobile */
+    /* METHOD (4 blocks) */
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .method-box {
+      background: white;
+      padding: 22px 20px;
+      border-radius: 35px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      font-size: 16px;
+      font-weight: 600;
+      border: 1px solid #e5e5e5;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.5;
+      text-align: center;
+    }
+
     @media (max-width: 720px) {
       .block-grid {
         grid-template-columns: 1fr;
       }
-      .block-grid-4 {
+      .method-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -97,13 +108,19 @@
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
-      text-align: center; /* 🔥 Centré propre */
+      text-align: center;
     }
 
     a {
       color: #0057b8;
       text-decoration: none;
       font-weight: 600;
+    }
+
+    ul {
+      list-style-position: inside;
+      padding-left: 0;
+      text-align: left;
     }
 
   </style>
@@ -118,7 +135,7 @@
 
   <div class="divider"></div>
 
-  <!-- FORMULE -->
+  <!-- FORMULA -->
   <h2>La formule que je propose</h2>
 
   <div class="block-grid">
@@ -147,15 +164,15 @@
   <h2>Ma philosophie d’entraînement</h2>
 
   <p>
-    Pour tirer un maximum de bénéfice de l’entraînement, <strong>il doit être adapté à la forme du moment</strong>. Or la forme évolue constamment, en fonction des séances récentes, bien sûr, mais aussi du travail, de la vie familiale, du sommeil et des imprévus du quotidien.
+    Pour tirer un maximum de bénéfice de l’entraînement, il doit être adapté à la forme du moment. Or la forme évolue constamment : en fonction des séances récentes, bien sûr, mais aussi du travail, de la vie familiale, du sommeil et des imprévus du quotidien.
   </p>
 
   <p>
-    C’est pourquoi <strong>prévoir un plan plusieurs semaines à l’avance</strong> est, dans la plupart des cas, voué à l’échec ou, du moins, sous-optimal pour progresser.
+    C’est pourquoi prévoir un plan plusieurs semaines à l’avance est, dans la plupart des cas, voué à l’échec ou, du moins, sous-optimal pour progresser.
   </p>
 
   <p>
-    Mon objectif est simple : <strong>apporter de la performance, de façon efficace et durable</strong>.
+    Mon objectif est simple : apporter de la performance, de façon efficace et durable.
   </p>
 
   <div class="divider"></div>
@@ -165,55 +182,50 @@
 
   <p>Mon rôle premier est d’éviter les erreurs qui freinent la progression. Pour cela, ma méthode repose sur :</p>
 
-  <!-- 🔥 LES 4 BLOCS OVALISÉS -->
-  <div class="block-grid-4">
+  <div class="method-grid">
 
-    <div class="oval-box">
-      <strong>l'Analyse des données recueillies par la montre connectée</strong><br>
-      
+    <div class="method-box">
+      l’analyse rigoureuse des données recueillies par la montre connectée
     </div>
 
-    <div class="oval-box">
-      <strong>Nos échanges hebdomadaires</strong><br>
-      
+    <div class="method-box">
+      nos échanges lors des entretiens hebdomadaires
     </div>
 
-    <div class="oval-box">
-      <strong>Calibrage précis des intensités, allures et volumes</strong><br>
-      
+    <div class="method-box">
+      un calibrage précis des intensités, allures et volumes
     </div>
 
-    <div class="oval-box">
-      <strong>Une daptation continue du plan, même en cours de semaine </strong><br>
-      
+    <div class="method-box">
+      une adaptation continue du plan, même en cours de semaine
     </div>
 
   </div>
 
   <p>
-    L’athlète <strong>n’a plus à se soucier de la planification</strong> il peut se concentrer sur l’essentiel : courir.
+    L’athlète n’a plus à se soucier de la planification : il peut se concentrer sur l’essentiel : courir.
   </p>
 
   <p>
     Après chaque sortie, l’athlète peut m’envoyer un message ou une note vocale.  
-    Ces retours immédiats me permettent <strong>d’ajuster le plan à la marge</strong> pour rester au plus proche de la réalité du moment.
+    Ces retours immédiats me permettent d’ajuster le plan “à la marge” pour rester au plus proche de la réalité du moment.
   </p>
 
   <p>
-    Bien entendu, <strong>l’entraînement est périodisé</strong>. Une fois les objectifs définis, j’établis les grands blocs et les qualités à développer.
+    Bien entendu, l’entraînement est périodisé. Après avoir défini les objectifs, j’établis les grands blocs et les qualités à développer.
   </p>
 
   <p>
-    Mais les séances sont toujours décidées <strong>au plus près de l’exécution</strong>, afin d’ajuster les allures et les distances selon la forme réelle.
+    Mais les séances sont toujours décidées au plus près de l’exécution, afin d’ajuster les allures et les distances selon la forme réelle.
   </p>
 
   <p>
-    Je limite volontairement <strong>le nombre d’athlètes</strong> que j’accompagne afin d’allouer le temps et l’attention nécessaires à chacun.
+    Je limite volontairement le nombre d’athlètes que j’accompagne afin d’allouer le temps et l’attention nécessaires à chacun.
   </p>
 
   <p>
-    J’offre toujours <strong>un mois d’entraînement gratuit</strong> aux nouveaux athlètes.  
-    Si l’essai est concluant, cela débouche la plupart du temps sur <strong>une collaboration de long terme</strong>, ce qui est souhaitable pour tout le monde.
+    J’offre toujours un mois d’entraînement gratuit aux nouveaux athlètes.  
+    Si l’essai est concluant, cela débouche la plupart du temps sur une collaboration de long terme, ce qui est souhaitable pour tout le monde.
   </p>
 
   <div class="divider"></div>
@@ -222,11 +234,11 @@
   <h2>Les bases de mon expertise</h2>
 
   <p>
-    Je suis entraîneur en course à pied <strong>diplômé de l’USA Track & Field</strong>.
+    Je suis entraîneur en course à pied diplômé de l’USA Track & Field.
   </p>
 
   <p>
-    En tant qu’athlète, j’ai préparé <strong>tout type d’épreuve</strong> : du 5 km au marathon, en passant par des ultra-trails.
+    En tant qu’athlète, j’ai préparé tout type d’épreuve : du 5 km au marathon, en passant par des ultra-trails.
   </p>
 
   <p>
@@ -234,7 +246,7 @@
   </p>
 
   <p>
-    Toutes ces expériences, et les philosophies d’entraînement qui les accompagnaient, <strong>ont structuré la méthode que je propose aujourd’hui</strong>.
+    Toutes ces expériences, et les philosophies d’entraînement qui les accompagnaient, ont structuré la méthode que je propose aujourd’hui.
   </p>
 
   <p>
@@ -242,11 +254,11 @@
   </p>
 
   <p>
-    Je n’ai pas un passé d’athlète professionnel ; je suis un <strong>coureur “normal”</strong> qui travaille, qui a une vie, et qui a dû optimiser chaque minute d’entraînement pour progresser.
+    Je n’ai pas un passé d’athlète professionnel ; je suis un coureur “normal” qui travaille, qui a une vie, et qui a dû optimiser chaque minute d’entraînement pour progresser.
   </p>
 
   <p>
-    C’est cette approche <strong>concrète, réaliste et centrée sur l’efficacité</strong> que j’apporte aujourd’hui dans ma façon d’entraîner.
+    C’est cette approche concrète, réaliste et centrée sur l’efficacité que j’apporte aujourd’hui dans ma façon d’entraîner.
   </p>
 
   <!-- CONTACT -->
